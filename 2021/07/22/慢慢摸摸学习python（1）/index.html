@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive - Hexo</title>
+  <title>慢慢摸摸学习python（1） - Hexo</title>
   
 
   
@@ -104,7 +102,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -355,7 +353,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div id='cover-backstretch'></div>
           
@@ -431,63 +429,313 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-	  <article id="arc" class="post article white-box reveal shadow">
-			
-			
-				
-				
-					
-						
-						<h2>2021</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/07/22/%E6%85%A2%E6%85%A2%E6%91%B8%E6%91%B8%E5%AD%A6%E4%B9%A0python%EF%BC%881%EF%BC%89/">
-									<time>07-22</time>
-									
-										慢慢摸摸学习python（1）
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/07/21/html%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
-									<time>07-21</time>
-									
-										html的基础知识点总结1
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/06/05/hello-world/">
-									<time>06-05</time>
-									
-										Hello World
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        慢慢摸摸学习python（1）
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>datura31</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jul 22, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="慢慢摸摸学习python（1）" data-path="/2021/07/22/%E6%85%A2%E6%85%A2%E6%91%B8%E6%91%B8%E5%AD%A6%E4%B9%A0python%EF%BC%881%EF%BC%89/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  
+  <p>感觉python比C语言容易一些，但也就是一点点罢了，基本的数据类型与运算符都差不多，就是在后面的表单字典开始觉得python不是那么容易的东西。实在是学东西和做笔记太慢了。</p>
+<p>总结一下简单的知识点，然后再往下学习。<br>一、语句<br>输出<br>用print（）在括号中加上字符串，就可以向屏幕上输出指定的文字。比如输出‘hello world’，用代码实现</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print(‘hello, world’)<br>print()函数也可以接受多个字符串，用逗号“,”隔开，就可以连成一串输出。<br>print(‘The quick brown fox’, ‘jumps over’, ‘the lazy dog’)<br>The quick brown fox jumps over the lazy dog<br>print()会依次打印每个字符串，遇到逗号“,”会输出一个空格<br>print()也可以打印整数。<br>print(3)<br>3<br>print(1+ 2)<br>3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>输入<br>Python提供了一个input()，可以让用户输入字符串，并存放到一个变量里。比如输入用户的名字：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>x=input(“x:”)<br>x:34<br>y=input(“y:”)<br>y:42<br>print(int(x)*int(y))<br>1428<br>name = input()<br>Michael<br>name<br>‘Michael’<br>name = input()<br>print(‘hello,’, name)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>注释<br>Python中，井号（#）比较特殊：在代码中，井号后面到行尾的所有内容都将被忽略。<br>例：#打印圆的周长<br>print(2<em>pi</em>radius)<br>赋值<br>序列解包<br>可同时给多个变量赋值。将一序列解包，并将得到的值储存到一系列变量中。<br>例</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>x,y=y,x<br>print(x,y,z)<br> 2 1 3<br>values=1,2,3<br>values                                                     (1,2,3)<br>x,y,z=values<br>x                                                          1</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>链式赋值<br>链式赋值是一种快捷方式，用于将多个变量关联到同一个值。<br>增强赋值<br>将x=x+1写成x+=1，增强赋值适用于所有标准运算符，如*、/、%等。</p>
+<p>二、数据类型<br>整数型  任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样，计算机由于使用二进制，所以，有时候用十六进制表示整数比较方便，十六进制用0x前缀和0-9，a-f表示，例如：0xff00，0xa5b4c3d2，等等。</p>
+<p>浮点数   浮点数也就是小数，之所以称为浮点数，是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的，比如，1.23x109和12.3x108是完全相等的。</p>
+<p>布尔型<br>布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False.<br>bool（0）整数0被转化为FALSE，其他非整数例如2被转化为TRUE   、、、bool（‘’）空字符串被转化为FALSE，其他非空字符串会被转化为TRUE例如bool（‘ ’），bool（[]）[]空列表被转化为FALSE，bool（{}）{}空字典被转化为FALSE.</p>
+<p>字符串<br>字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”等等。请注意，’’或””本身只是一种表示方式，不是字符串的一部分，因此，字符串’abc’只有a，b，c这3个字符。如果’本身也是一个字符，那就可以用””括起来，比如”I’m OK”包含的字符是I，’，m，空格，O，K这6个字符。<br>转义字符\可以转义很多字符，比如\n表示换行，\t表示制表符，字符\本身也要转义，所以\表示的字符就是\，用r’’表示’’内部的字符串默认不转义，用’’’…’’’的格式表示多行内容，多行字符串’’’…’’’还可以在前面加上r使用。</p>
+<p>拼接字符串<br>输入两个字符串，python自动将它们拼接起来，但要同时输入两个字符串时这种机制才管用，通用的是将两个字符串相加起来进行拼接。<br>例1. &gt;&gt;&gt;“’Let’s say”’”Hello world!”’<br>‘Let\’s say “Hello world!”’<br>2.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>x=”Hello,”<br>y=”world”<br>x+y<br>‘Hello,world!’</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>字符串表示str和repr<br>Python打印所有的字符串时，都用引号将其括起来，这是因为python打印值时，保留其在代码中的样子。而使用print，结果将不同。<br>例</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>”Hello,world!”<br>‘Hello,world!’<br>print(“Hello,world!”)<br>Hello,world!<br>加上换行符\n<br>”Hello,\nworld!”<br>‘Hello,\nworld!’<br>ptint(“Hello,\nworld!”)<br>Hello,<br>world!</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>通过两种不同的机制将值转化成了字符串，可以通过使用函数str和repr直接使用这两种机制。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print(repr(“Hello,\nworld!”))<br>‘Hello,\nworld!’<br>print(str(“Hello,\nworld!”))<br>Hello,<br>world!</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>长字符串<br>要表示很长的字符串（跨越多行的字符串），可使用三引号（而不是普通的引号）。<br>例</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print(‘‘‘This is a very long string.It continus here.<br>And it’s not over yet.”Hello,world!”<br>Still here.’’’)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>还可以使用三个双引号，如”””like this”””。这让解释器能够识别表示字符串开始和结束位置的引号，因此字符串本身可包含单引号和双引号，无需使用反斜杠进行转义。</p>
+<p>原始字符串<br>原始字符串不以特殊方式处理反斜杠，因此在有些情况下很有用。在常规字符串中，反斜杠扮演着特殊角色：它对字符进行转义，让你能够在字符串中包含原本无法包含的字符。<br>例</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print(‘Hello,\nworld!’) #\n表示换行符，在字符串中包含换行符。<br>Hello,<br>world!<br>原始字符串不会对反斜杠做特殊处理，而是让字符串包含的每个字符保持原样。原始字符串用前缀r表示。<br>print(r’C：\nowhere’)<br>C:\nowhere<br>print(r’C:\Program Files\fnord\foo\bar\baz\frozz\bozz’)<br>\Program Files\fnord\foo\bar\baz\frozz\bozz<br>有一个例外是，引号需要像通常那样转义，但这意味着用于执行转义的反斜杠也将包含在最终的字符串中。<br>print(r’Let\’s go!’)<br>Let\’s go!</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>注：原始字符串不能以单个反斜杠结尾。即原始字符串的最后一个字符不能是反斜杠，除非进行转义（但在转义时，用于转义的反斜杠也将是字符串的一部分。）如果最后一个字符（位于结束引号前面的那个字符）为反斜杠，且未进行转义，python将无法判断字符串是否到此结束。但如果要指定以反斜杠结尾的反斜杠的原始字符串（如以反斜杠结尾的DOS路径），可使用单引号或双引号将其括起，还可以用三引号将其括起。<br>Unicode、bytes和bytearray<br>Python字符串使用Unicode编码来表示文本。</p>
+<p>空值<br>空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。</p>
+<p>三、运算符<br>算术运算符<br>加+减-乘<em>除/ 取余%  幂</em>*  整除//  a+b a-b a*b  a/b  a%b a**b  a//b<br>a%b=x-((x//y)*y)<br>a//b(求小于a与b的商的最大整数商)整除运算即运算时丢弃小数部分，使用双斜杠//，整除运算是向下圆整结果，结果为负数的情况下，圆整后将离0更远，例如-10//3，向下圆整到-4。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>10//3<br>3<br>10//-3<br>-4<br>-10//3<br>-4<br>-10//-3<br>3<br>10%3<br>3<br>10%-3<br>-2<br>-10%3<br>2<br>-10%-3<br>-1<br>9%3<br>0</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>比较运算符<br>比较运算符用于比较两个表达式的大小，其结果是布尔型的数据，即FALSE和TRUE。<br>==等于   ！=不等于   &lt;小于  &gt;大于   &gt;=大于等于   &lt;=小于等于<br>例如</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>1.0==1<br>TRUE<br>a=’Hello’<br>b=’Hello’<br>a==b<br>TRUE</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>逻辑运算符<br>逻辑运算符用于对布尔型变量进行运算，其结果也是布尔型。<br>not  逻辑非 not a  a为TRUE时，值为FALSE，a为FALSE时，值为TRUE。<br>and  逻辑与 a and b  a、b全为TRUE时，计算结果为TRUE，否则为FALSE。<br>or   逻辑或 a or b   a、b全为FALSE时，计算结果为FALSE，否则为TRUE。</p>
+<p>赋值运算符<br>赋值运算符只是一种简写，只有算术运算和位运算中的二元运算才有对应的赋值运算符。</p>
+<p>+= 加赋值  a+=b  等价于a=a+b<br>-=  减赋值  a-=b  等价于a=a-b<br><em>=  乘赋值  a</em>=b  等价于a=a*b<br>/=  除赋值  a/=b  等价于a=a/b<br>%= 取余赋值  a%=b  等价于a=a%b<br><strong>= 幂赋值  a</strong>=b   等价于a=a**b<br>//= 整除赋值  a//=b  等价于a=a//b<br>&amp;= 位与赋值  a&amp;=b  等价于a=a&amp;b<br>|=  位或赋值  a|=b   等价于a=a|b<br>^=  位异或赋值  a^=b  等价于a=a^b<br>&lt;&lt;= 左移赋值  a&lt;&lt;=b  等价于a=a&lt;&lt; b<br>    右移赋值  a&gt;&gt;=b  等价于a=a&gt;&gt;b</p>
+<p>位运算符<br>位运算是以二进制为单位进行运算的，操作数和结果都是整数类型的数据。<br>~ 位反  ~x  将x的值按位反取反<br>&amp;  位于  x&amp;y  将x与y按位进行位于运算<br>|   位或   x|y  将x与y按位进行位或运算<br>^  位异或  x^y 将x和y按位进行位异或运算<br>   右移   x&gt;&gt;a 将x右移a位，高位采用符号位补位。<br>&lt;&lt; 左移  x&lt;&lt; a 将x左移a位，低位用0补位。</p>
+<p>运算符优先级<br>1    ()    小括号<br>2    **    幂<br>3    ~    位反<br>4    +、-    正负号<br>5    *，/，%，//    乘、除、取余、整除<br>6    +、-    加、减<br>7    &lt;&lt;、&gt;&gt;    位移<br>8    &amp;    位与<br>9    ^    位异或<br>10    |    位或<br>11    &lt;、&gt;=、&gt;、&gt;=、&lt;&gt;、!=、==    比较<br>12    not    逻辑非<br>13    and、or    逻辑与、逻辑或</p>
+<p>四、条件、循环及其他语句</p>
+<p>条件语句<br>if<br>if条件：<br>    语句组<br>if-else<br>if条件:<br>语句组1<br>else:<br>    语句组2<br>if-elif-else<br>if条件1:<br>语句组1<br>elif条件2:<br>语句组2<br>……<br>elif条件n:<br>    语句组n<br>else:<br>    语句组n+1</p>
+<p>循环语句<br>While<br>For<br>for x in …循环就是把每个元素代入变量x，然后执行缩进块的语句。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>names = [‘Michael’, ‘Bob’, ‘Tracy’]<br>for name in names:<br>print(name)<br>Michael<br>Bob<br>Tracy</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>注：鉴于迭代特定范围内的数是一种常见的任务，python提供了一个创建范围的内置函数(range)</p>
+<p>跳转语句<br>break<br>在循环中，break语句可以提前退出循环。<br>continue<br>在循环过程中，也可以通过continue语句，跳过当前的这次循环，直接开始下一次循环。</p>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/07/22/%E6%85%A2%E6%85%A2%E6%91%B8%E6%91%B8%E5%AD%A6%E4%B9%A0python%EF%BC%881%EF%BC%89/>http://example.com/2021/07/22/%E6%85%A2%E6%85%A2%E6%91%B8%E6%91%B8%E5%AD%A6%E4%B9%A0python%EF%BC%881%EF%BC%89/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-07-22T16:07:12+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jul 22, 2021</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/07/22/%E6%85%A2%E6%85%A2%E6%91%B8%E6%91%B8%E5%AD%A6%E4%B9%A0python%EF%BC%881%EF%BC%89/&title=慢慢摸摸学习python（1） - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/07/22/%E6%85%A2%E6%85%A2%E6%91%B8%E6%91%B8%E5%AD%A6%E4%B9%A0python%EF%BC%881%EF%BC%89/&title=慢慢摸摸学习python（1） - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/07/22/%E6%85%A2%E6%85%A2%E6%91%B8%E6%91%B8%E5%AD%A6%E4%B9%A0python%EF%BC%881%EF%BC%89/&title=慢慢摸摸学习python（1） - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2021/07/21/html%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/'>
+          <p class='title'>html的基础知识点总结1<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>通过简单的学习了HTML，了解到最重要的内容就是掌握标签的使用，熟记一些特殊且常用的标签。而元素属性则是最基础的部分，应该多写写，多看看源代码就会记住了，另外还有常用到的表格表单。
+HTML基础...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -495,109 +743,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='/images/avatar.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
 
   
 
 
 </aside>
+
 
 
 		  
@@ -606,21 +759,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="慢慢摸摸学习python（1）";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
