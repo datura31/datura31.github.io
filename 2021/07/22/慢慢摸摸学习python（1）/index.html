@@ -515,11 +515,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <blockquote>
 <blockquote>
 <blockquote>
-<p>x,y=y,x<br>print(x,y,z)<br> 2 1 3<br>values=1,2,3<br>values                                                     (1,2,3)<br>x,y,z=values<br>x                                                          1</p>
+<p>x,y=y,x<br>print(x,y,z)<br>2 1 3<br>values=1,2,3<br>values                                      (1,2,3)<br>x,y,z=values<br>x                                           1</p>
 </blockquote>
 </blockquote>
 </blockquote>
-<p>链式赋值<br>链式赋值是一种快捷方式，用于将多个变量关联到同一个值。<br>增强赋值<br>将x=x+1写成x+=1，增强赋值适用于所有标准运算符，如*、/、%等。</p>
+<p>链式赋值<br>链式赋值是一种快捷方式，用于将多个变量关联到同一个值。</p>
+<p>增强赋值<br>将x=x+1写成x+=1，增强赋值适用于所有标准运算符，如*、/、%等。</p>
 <p>二、数据类型<br>整数型  任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样，计算机由于使用二进制，所以，有时候用十六进制表示整数比较方便，十六进制用0x前缀和0-9，a-f表示，例如：0xff00，0xa5b4c3d2，等等。</p>
 <p>浮点数   浮点数也就是小数，之所以称为浮点数，是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的，比如，1.23x109和12.3x108是完全相等的。</p>
 <p>布尔型<br>布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False.<br>bool（0）整数0被转化为FALSE，其他非整数例如2被转化为TRUE   、、、bool（‘’）空字符串被转化为FALSE，其他非空字符串会被转化为TRUE例如bool（‘ ’），bool（[]）[]空列表被转化为FALSE，bool（{}）{}空字典被转化为FALSE.</p>
@@ -561,7 +562,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <blockquote>
 <blockquote>
 <blockquote>
-<p>print(‘Hello,\nworld!’) #\n表示换行符，在字符串中包含换行符。<br>Hello,<br>world!<br>原始字符串不会对反斜杠做特殊处理，而是让字符串包含的每个字符保持原样。原始字符串用前缀r表示。<br>print(r’C：\nowhere’)<br>C:\nowhere<br>print(r’C:\Program Files\fnord\foo\bar\baz\frozz\bozz’)<br>\Program Files\fnord\foo\bar\baz\frozz\bozz<br>有一个例外是，引号需要像通常那样转义，但这意味着用于执行转义的反斜杠也将包含在最终的字符串中。<br>print(r’Let\’s go!’)<br>Let\’s go!</p>
+<p>print(‘Hello,\nworld!’) #\n表示换行符，在字符串中包含换行符。<br>Hello,<br>world!</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>原始字符串不会对反斜杠做特殊处理，而是让字符串包含的每个字符保持原样。原始字符串用前缀r表示。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print(r’C：\nowhere’)<br>C:\nowhere<br>print(r’C:\Program Files\fnord\foo\bar\baz\frozz\bozz’)<br>\Program Files\fnord\foo\bar\baz\frozz\bozz</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>有一个例外是，引号需要像通常那样转义，但这意味着用于执行转义的反斜杠也将包含在最终的字符串中。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print(r’Let\’s go!’)<br>Let\’s go!</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -634,7 +651,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-07-22T16:22:22+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-07-22T16:25:11+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Jul 22, 2021</p>
