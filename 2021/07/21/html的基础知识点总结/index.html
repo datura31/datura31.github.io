@@ -493,8 +493,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
   <p>通过简单的学习了HTML，了解到最重要的内容就是掌握标签的使用，熟记一些特殊且常用的标签。而元素属性则是最基础的部分，应该多写写，多看看源代码就会记住了，另外还有常用到的表格表单。</p>
-<p>HTML基础语法：<br>HTML元素需要用符号&lt;&gt;括起来，每个语言都需要注释进行对于代码的解读和理解，用&lt;!—&gt;进行注释，注释的内容不会被浏览器解析，且不会显示在页面中。对于大小写不敏感，对于小写更常用。</p>
+<p>HTML基础语法：<br>HTML元素需要用符号&lt;&gt;括起来，每个语言都需要注释进行对于代码的解读和理解，用&lt; !—&gt;进行注释，注释的内容不会被浏览器解析，且不会显示在页面中。对于大小写不敏感，对于小写更常用。</p>
 <p>标签可分为两种：封闭类型标签和非封闭类型标签。<br>封闭类型标签：具有开始标签与结束标签例如&lt; a&gt; &lt; /a&gt;<br>非封闭类型标签：也就是空元素，例如&lt; hr/&gt; &lt; br/&gt; &lt; img/&gt;</p>
+<p>元素属性<br>属性值、属性名：&lt; p 属性名=”属性值”&gt;&lt; /p&gt;<br>标准属性：<br>1、id:定义每个标签的唯一标识（一个标签只能拥有一个id，一个id名只能出现一次）例：&lt; div id=”once”&gt;&lt; /div&gt;<br>2、title:鼠标移入元素时显示文本&lt; p title=”……”&gt;&lt; /div&gt;<br>3、class：样式相关，类样式&lt; div class=”main”&gt;&lt; /div&gt;<br>4、style：样式相关，行内样式&lt; div style=”color:red;”&gt;我是一个红色文本&lt; /div&gt;</p>
+<p>文档结构<br>根元素：文档声明&lt; !doctype html&gt;（不是HTML标签）<br>&lt; head&gt;头部:声明网页标题、定义网页文本编码格式、元数据是关于数据的信息<br>&lt; body&gt;主体<br>网页内容，可以是文本，图像</p>
+<p>HTML标签<br>标题元素&lt; h1&gt;-&lt; h6&gt;<br>段落元素&lt; p&gt;&lt; /p&gt;每对p标签单独成一个段落，段落与其他元素有垂直空白<br>align:对齐方式（left左对齐、right右对齐、center居中对齐）<br>&lt; div&gt;&lt; /div&gt;元素:可定义文档中的分区或节，可以把文档分割为独立的、不同的部分，可以使用align属性。<br>特殊的文本：转义字符：空格：&amp;nbsp(一个&amp;nbsp就是一个空格)，&lt;:&amp;lt,&gt;:&amp;gt。<br>文本样式：&lt; b&gt;…&lt; /b&gt;加粗文本，&lt; i&gt;…&lt; /i&gt;斜体文本，&lt; u&gt;…&lt; /u&gt;下划线，&lt; s&gt;…&lt; /s&gt;和&lt; del&gt;…&lt; /del&gt;删除线，&lt; sup&gt;…&lt; /sup&gt;上标,&lt; sub&gt;…&lt; /sub&gt;下标。<br>&lt; span&gt;标签：用来组合文档中的行内元素，以便通过样式来格式化它们（span元素一个回车是一个空格，在同一行）。<br>换行元素：在代码的任何位置，实现回车的效果&lt; br/&gt;（HTML页面中无论多少次回车，默认只会显示一个空格效果）。<br>预格式化：保留源文档中的空格和回车&lt; pre&gt;文本内容&lt; /pre&gt;。<br>水平线/分割线属性：<br>1、size：水平线的粗细，通常一像素（px）为单位，<br>2、width：宽度，<br>3、align：水平线的水平对齐方式，<br>4、color：颜色。</p>
+<p>行内元素和块级元素<br>块级元素：用于布局，独占一行，元素前后都会自动换行。<br>行内元素：修改内部内容的样式，多个元素位于同一行，不会换行（行内元素在父元素中容不下时才会自动换行）。<br>元素嵌套：标签之间相互嵌套，形成复杂的语法结构，块级元素可以嵌套块级元素与行内元素，p标签虽然是块级元素，但是只能嵌套行内元素，行内元素不允许嵌套块级元素。。</p>
+<p>结构标记<br>&lt; header&gt;标签表示在页面的最上面，可以放入一些页面的标题、导航信息等 ，&lt; header&gt;&lt; /header&gt;等同于h5之前的&lt; div id=”header”&gt;&lt; /div&gt;<br>作用：增强标签的语意性<br>section:小节：该元素标识网页内容中的某一部分。定义文章章节、内容的楼层。<br>article：文章、内容   可以用于放置独立于上下文的“文章”或一大段文本内容。<br>侧边框，可以用标识正规内容额外的部分内容，边框栏内容优先使用 &lt; aside&gt;元素。<br>footer:定义网页底部信息，多用于企业介绍、标识等部分内容等同于&lt; div id=”footer”&gt;&lt; /div&gt;。</p>
 
   
   
@@ -529,10 +534,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-07-22T15:44:21+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-07-23T12:13:27+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jul 22, 2021</p>
+    <p>更新于：Jul 23, 2021</p>
   </a>
 </div>
 
